@@ -1,0 +1,85 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Estilo del título */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo de la cuadrícula */
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    grid-gap: 2px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada celda de la cuadrícula */
+.celda {
+    width: 30px;
+    height: 30px;
+    background-color: #007BFF;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para las celdas especiales */
+.celda.inicio {
+    background-color: green;
+}
+
+.celda.fin {
+    background-color: red;
+}
+
+.celda.camino {
+    background-color: yellow;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+/* Cambia el color del botón cuando el mouse pasa por encima */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estado del proceso */
+#estadoJuego {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+

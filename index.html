@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Camino Mínimo (Dijkstra)</title>
+    <!-- Enlazamos el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+        <h1>Simulador de Camino Mínimo</h1>
+
+        <!-- Contenedor de la cuadrícula -->
+        <div class="cuadricula" id="cuadricula"></div>
+
+        <!-- Botón para ejecutar el algoritmo de Dijkstra -->
+        <button onclick="iniciarDijkstra()">Iniciar Algoritmo Dijkstra</button>
+
+        <!-- Botón para reiniciar la simulación -->
+        <button onclick="reiniciar()">Reiniciar</button>
+
+        <!-- Estado del proceso -->
+        <div id="estadoJuego"></div>
+    </div>
+
+    <!-- Enlazamos el archivo JavaScript que contiene la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
+
